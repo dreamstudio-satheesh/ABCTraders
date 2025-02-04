@@ -19,6 +19,32 @@ Route::group(['middleware' => ['auth'], 'as' => 'admin.', 'prefix' => 'admin'], 
     // Roles
     Route::resource('role', App\Http\Controllers\Admin\RoleController::class);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
     //Pages
     Route::put('page/status/{id}', [App\Http\Controllers\Admin\PageController::class, 'status'])->name('page.status');
     Route::resource('page', App\Http\Controllers\Admin\PageController::class);
