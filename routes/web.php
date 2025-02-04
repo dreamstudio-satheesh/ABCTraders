@@ -13,7 +13,7 @@ Route::get('/', function () {
 Route::group(['middleware' => ['auth'], 'as' => 'admin.', 'prefix' => 'admin'], function () {
 
     // Dashboard
-    Route::get('dashboard', [App\Http\Controllers\Admin\DashboardController::class, 'index'])->name('default_dashboard');
+    Route::get('dashboard', [App\Http\Controllers\Admin\DashboardController::class, 'index'])->name('dashboard');
 
 
     // Roles
@@ -74,7 +74,7 @@ Route::group(['middleware' => ['auth'], 'as' => 'admin.', 'prefix' => 'admin'], 
 
 
     //Dashboards
-    Route::view('index', 'dashboards.index')->name('dashboard');
+    //Route::view('index', 'dashboards.index')->name('dashboard');
     Route::view('ecommerce', 'dashboards.ecommerce')->name('ecommerce');
     Route::view('project', 'dashboards.project')->name('project');
 

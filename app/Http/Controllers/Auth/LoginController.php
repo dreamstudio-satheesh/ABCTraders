@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 
 class LoginController extends Controller
-    {
+{
     /*
     |--------------------------------------------------------------------------
     | Login Controller
@@ -20,15 +20,18 @@ class LoginController extends Controller
 
     use AuthenticatesUsers;
 
+
+    protected $redirectTo = 'admin/dashboard';
+
     /**
      * Where to redirect users after login.
      *
      * @var string
      */
     public function authenticated()
-        {
-        return redirect()->route('admin.default_dashboard');
-        }
+    {
+        return redirect()->route('admin.dashboard');
+    }
 
     /**
      * Create a new controller instance.
@@ -36,8 +39,8 @@ class LoginController extends Controller
      * @return void
      */
     public function __construct()
-        {
+    {
         $this->middleware('guest')->except('logout');
         $this->middleware('auth')->only('logout');
-        }
     }
+}
