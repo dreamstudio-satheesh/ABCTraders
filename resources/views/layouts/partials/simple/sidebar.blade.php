@@ -167,7 +167,7 @@
                             <svg class="stroke-icon">
                                 <use href="{{ asset('assets/svg/icon-sprite.svg#stroke-settings') }}"></use>
                             </svg>
-                            <span>Integrations & Settings</span>
+                            <span>Settings</span>
                         </a>
                         <ul class="sidebar-submenu">
                             <li><a href="{{ url('admin/integrations') }}">Integration Configuration</a></li>
