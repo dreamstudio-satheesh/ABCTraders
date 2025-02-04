@@ -1,5 +1,5 @@
 
-// every time work start fir pull data and modify else you got error
+// every time before  start work use 'git  pull'  then start modify content  else you may got error !
 git pull
 
 
