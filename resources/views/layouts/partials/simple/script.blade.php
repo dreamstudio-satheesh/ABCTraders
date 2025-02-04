@@ -18,9 +18,11 @@
 @yield('scripts')
 <!-- Plugins JS Ends-->
 <!-- Theme js-->
-{{-- 
 <script src="{{ asset('assets/js/script.js') }}"></script>
 <script src="{{ asset('assets/js/script2.js') }}"></script>
+
+{{-- 
+
 <script src="{{ asset('assets/js/theme-customizer/customizer.js') }}"></script>
  --}}
 <!-- toastr js -->
