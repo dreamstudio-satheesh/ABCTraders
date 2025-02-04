@@ -1580,6 +1580,7 @@
           top: 0;
           z-index: 22;
           height: auto;
+          min-height: 100vh;
           line-height: inherit;
           width: $sidebar-compact-width;
           text-align: left;
