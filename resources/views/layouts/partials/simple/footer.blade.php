@@ -2,7 +2,7 @@
     <div class="container-fluid">
       <div class="row gy-1">
         <div class="col-lg-6 col-md-7 footer-copyright">
-          <p class="mb-0 f-light f-w-500">Copyright @php echo date('Y'); @endphp © Yuri theme by pixelstrap</p>
+          <p class="mb-0 f-light f-w-500">Copyright @php echo date('Y'); @endphp © DreamCoderz</p>
         </div>
         <div class="col-lg-6 col-md-5">
           <div class="d-flex">
@@ -14,12 +14,7 @@
                   </div>
                   <div class="more_lang">
                     <div class="lang selected" data-value="English"><span class="lang-txt">English<span> (US)</span></span></div>
-                    <div class="lang" data-value="Deutsch"><span class="lang-txt">Deutsch</span></div>
-                    <div class="lang" data-value="Español"><span class="lang-txt">Español</span></div>
-                    <div class="lang" data-value="Français"><span class="lang-txt">Français</span></div>
-                    <div class="lang" data-value="Português"><span class="lang-txt">Português<span> (BR)</span></span></div>
-                    <div class="lang" data-value="简体中文"><span class="lang-txt">简体中文</span></div>
-                    <div class="lang" data-value="لعربية"><span class="lang-txt">لعربية <span> (ae)  </span></span></div>
+                  
                   </div>
                 </div>
               </li>
