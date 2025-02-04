@@ -1,3 +1,5 @@
+
+// every time work start fir pull data and modify else you got error
 git pull
 
 
