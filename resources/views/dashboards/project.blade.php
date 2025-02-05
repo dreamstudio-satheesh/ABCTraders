@@ -28,7 +28,7 @@
         <div class="card-body">
           <h4 class="f-light f-w-500 mb-1">Have you tried</h4>
           <h2 class="mb-3">Upgrade Your Plan</h2><a class="btn btn-primary btn-hover-effect"
-            href="{{ route('admin.pricing') }}">Upgrade Plan</a>
+            href="{{ url('admin.pricing') }}">Upgrade Plan</a>
         </div>
         <div class="welcome-image"> <img class="img-fluid" src="{{ asset('assets/images/dashboard-3/1.png') }}"
             alt="upgrade"></div>
