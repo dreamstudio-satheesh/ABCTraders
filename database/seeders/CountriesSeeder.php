@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
-use Webpatser\Countries\CountriesFacade;
+// Webpatser\Countries\CountriesFacade;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 class CountriesSeeder extends Seeder
@@ -16,20 +16,6 @@ class CountriesSeeder extends Seeder
     {
         // Empty the countries table
         DB::table('countries')->delete();
-       /*  $countries = CountriesFacade::getList();
-        foreach ($countries as $countryId => $country){
-            DB::table('countries')->insert(array(
-                'id' => $countryId,
-                'name' => $country['name'],
-                'currency' => ((isset($country['currency'])) ? $country['currency'] : null),
-                'currency_symbol' => ((isset($country['currency_symbol'])) ? $country['currency_symbol'] : null),
-                'currency_code' => ((isset($country['currency_code'])) ? $country['currency_code'] : null),
-                'iso_3166_2' => $country['iso_3166_2'],
-                'iso_3166_3' => $country['iso_3166_3'],
-                'calling_code' => $country['calling_code'],
-                'flag' =>((isset($country['flag'])) ? $country['flag'] : null),
-            ));
-        } */
 
         DB::table('countries')->insert(
             array('id' => '356','name' => 'India','currency' => 'Indian rupee','currency_symbol' => '₹','iso_3166_2' => 'IN','iso_3166_3' => 'IND','calling_code' => '91','flag' => 'IN.png','currency_code' => 'INR')
