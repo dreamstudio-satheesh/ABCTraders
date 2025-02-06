@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8c7f1ede2138a61fbb3410cf50d05d4a",
+    "content-hash": "2c8ad0eca2cf2606b83a2067a7dee999",
     "packages": [
         {
             "name": "brick/math",
@@ -4452,16 +4452,16 @@
         },
         {
             "name": "spatie/laravel-medialibrary",
-            "version": "11.12.1",
+            "version": "11.12.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-medialibrary.git",
-                "reference": "8372552a74e781dbcb70ab8b7d0cc9c520b41daa"
+                "reference": "735127e4d2a61862bd67d0bdfa6ed87528948ace"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-medialibrary/zipball/8372552a74e781dbcb70ab8b7d0cc9c520b41daa",
-                "reference": "8372552a74e781dbcb70ab8b7d0cc9c520b41daa",
+                "url": "https://api.github.com/repos/spatie/laravel-medialibrary/zipball/735127e4d2a61862bd67d0bdfa6ed87528948ace",
+                "reference": "735127e4d2a61862bd67d0bdfa6ed87528948ace",
                 "shasum": ""
             },
             "require": {
@@ -4545,7 +4545,7 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/laravel-medialibrary/issues",
-                "source": "https://github.com/spatie/laravel-medialibrary/tree/11.12.1"
+                "source": "https://github.com/spatie/laravel-medialibrary/tree/11.12.2"
             },
             "funding": [
                 {
@@ -4557,7 +4557,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-01-13T16:29:49+00:00"
+            "time": "2025-02-05T08:23:50+00:00"
         },
         {
             "name": "spatie/laravel-package-tools",
@@ -4621,16 +4621,16 @@
         },
         {
             "name": "spatie/laravel-permission",
-            "version": "6.12.0",
+            "version": "6.13.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-permission.git",
-                "reference": "420ea2a49db480302813d444834baaf7c8674782"
+                "reference": "bb3ad222d65ec804c219cc52a8b54f5af2e1636a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-permission/zipball/420ea2a49db480302813d444834baaf7c8674782",
-                "reference": "420ea2a49db480302813d444834baaf7c8674782",
+                "url": "https://api.github.com/repos/spatie/laravel-permission/zipball/bb3ad222d65ec804c219cc52a8b54f5af2e1636a",
+                "reference": "bb3ad222d65ec804c219cc52a8b54f5af2e1636a",
                 "shasum": ""
             },
             "require": {
@@ -4692,7 +4692,7 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/laravel-permission/issues",
-                "source": "https://github.com/spatie/laravel-permission/tree/6.12.0"
+                "source": "https://github.com/spatie/laravel-permission/tree/6.13.0"
             },
             "funding": [
                 {
@@ -4700,7 +4700,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-01-31T01:07:40+00:00"
+            "time": "2025-02-05T15:42:48+00:00"
         },
         {
             "name": "spatie/temporary-directory",
@@ -7261,73 +7261,6 @@
                 "source": "https://github.com/webmozarts/assert/tree/1.11.0"
             },
             "time": "2022-06-03T18:03:27+00:00"
-        },
-        {
-            "name": "webpatser/laravel-countries",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/webpatser/laravel-countries.git",
-                "reference": "9d0cd970c764197a9966e4e864eba6253bbafa28"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/webpatser/laravel-countries/zipball/9d0cd970c764197a9966e4e864eba6253bbafa28",
-                "reference": "9d0cd970c764197a9966e4e864eba6253bbafa28",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "default-branch": true,
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "aliases": {
-                        "Countries": "Webpatser\\Countries\\CountriesFacade"
-                    },
-                    "providers": [
-                        "Webpatser\\Countries\\CountriesServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Webpatser\\Countries": "src/"
-                },
-                "classmap": [
-                    "src/commands"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Christoph Kempen",
-                    "email": "christoph@downsized.nl",
-                    "homepage": "http://downsized.nl/",
-                    "role": "developer"
-                },
-                {
-                    "name": "Paul Kievits",
-                    "role": "developer"
-                }
-            ],
-            "description": "Laravel Countries is a bundle for Laravel, providing Almost ISO 3166_2, 3166_3, currency, Capital and more for all countries.",
-            "homepage": "https://github.com/webpatser/laravel-countries",
-            "keywords": [
-                "countries",
-                "iso_3166_2",
-                "iso_3166_3",
-                "laravel"
-            ],
-            "support": {
-                "issues": "https://github.com/webpatser/laravel-countries/issues",
-                "source": "https://github.com/webpatser/laravel-countries"
-            },
-            "time": "2023-02-08T11:09:34+00:00"
         },
         {
             "name": "yajra/laravel-datatables",
@@ -10068,9 +10001,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "webpatser/laravel-countries": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
