@@ -10,7 +10,7 @@
   <meta name="csrf-token" content="{{ csrf_token() }}" />
   <link rel="icon" href="{{ asset('assets/images/favicon.png') }}" type="image/x-icon">
   <link rel="shortcut icon" href="{{ asset('assets/images/favicon.png') }}" type="image/x-icon">
-  <title>ABC Traders</title>
+  <title>{{ config('app.name') }}</title>
   @include('layouts.partials.simple.style')
 </head>
 <script>

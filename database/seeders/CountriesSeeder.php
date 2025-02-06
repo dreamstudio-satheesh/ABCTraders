@@ -16,7 +16,7 @@ class CountriesSeeder extends Seeder
     {
         // Empty the countries table
         DB::table('countries')->delete();
-        $countries = CountriesFacade::getList();
+       /*  $countries = CountriesFacade::getList();
         foreach ($countries as $countryId => $country){
             DB::table('countries')->insert(array(
                 'id' => $countryId,
@@ -29,6 +29,10 @@ class CountriesSeeder extends Seeder
                 'calling_code' => $country['calling_code'],
                 'flag' =>((isset($country['flag'])) ? $country['flag'] : null),
             ));
-        }
+        } */
+
+        DB::table('countries')->insert(
+            array('id' => '356','name' => 'India','currency' => 'Indian rupee','currency_symbol' => '₹','iso_3166_2' => 'IN','iso_3166_3' => 'IND','calling_code' => '91','flag' => 'IN.png','currency_code' => 'INR')
+          );
     }
 }

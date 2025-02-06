@@ -54,19 +54,13 @@
                     </li>
 
                     <!-- Dashboard Menu -->
-                    <li class="sidebar-list">
-                        <a class="sidebar-link sidebar-title" href="javascript:void(0)">
+                    <li class="sidebar-menu">
+                        <a class="sidebar-link sidebar-title link-nav" href="{{ url('admin/dashboard') }}">
                             <svg class="stroke-icon">
                                 <use href="{{ asset('assets/svg/icon-sprite.svg#stroke-home') }}"></use>
                             </svg>
                             <span>Dashboard</span>
                         </a>
-                        <ul class="sidebar-submenu">
-                            <li><a href="{{ url('admin/dashboard') }}">General Dashboard</a></li>
-                            <li><a href="{{ url('admin/dashboard/admin') }}">Admin Dashboard</a></li>
-                            <li><a href="{{ url('admin/dashboard/warehouse') }}">Warehouse Staff Dashboard</a></li>
-                            <li><a href="{{ url('admin/dashboard/supervisor') }}">Supervisor Dashboard</a></li>
-                        </ul>
                     </li>
 
                     <!-- User Management -->
@@ -78,8 +72,9 @@
                             <span>User Management</span>
                         </a>
                         <ul class="sidebar-submenu">
-                            <li><a href="{{ url('admin/users') }}">User List</a></li>
-                            <li><a href="{{ url('admin/users/create') }}">Add/Edit User</a></li>
+                            <li><a href="{{ url('admin/user') }}">Users List</a></li>{{-- 
+                            <li><a href="{{ url('admin/user/create') }}">Add User</a></li> --}}
+                            <li><a href="{{ url('admin/role') }}">Roles</a></li>
                         </ul>
                     </li>
 

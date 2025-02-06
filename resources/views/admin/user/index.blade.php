@@ -10,7 +10,7 @@
         <h2>Users Management</h2>
         <nav>
             <ol class="breadcrumb justify-content-sm-start align-items-center mb-0">
-                <li class="breadcrumb-item f-w-500">Laravel Example</li>
+                <li class="breadcrumb-item f-w-500">{{ config('app.name') }}</li>
                 <li class="breadcrumb-item f-w-500 active">Users Management</li>
             </ol>
         </nav>
