@@ -9,7 +9,7 @@ return new class extends Migration {
         Schema::create('attributes', function (Blueprint $table) {
             $table->id();
             $table->string('name')->notNull();
-            $table->string('type')->notNull(); // e.g., color, size, material
+            $table->string('slug')->notNull(); // e.g., color, size, material
             $table->timestamps();
         });
 

@@ -12,6 +12,7 @@ return new class extends Migration {
             $table->string('name')->unique()->notNull();
             $table->string('slug')->unique();
             $table->unsignedBigInteger('parent_id')->nullable();
+            $table->integer('status')->default(1);
             $table->timestamps();
 
             $table->foreign('parent_id')->references('id')->on('categories')->onDelete('cascade');
