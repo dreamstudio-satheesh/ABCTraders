@@ -26,7 +26,6 @@
                     <div class="status bg-success"></div>
                 </div>
                 <div>
-                    {{-- Removed User Name --}}
                     <span>{{ ucfirst(auth()->user()?->role->name) }}</span>
                 </div>
             </div>
@@ -53,7 +52,7 @@
                         </div>
                     </li>
 
-                    <!-- Dashboard Menu -->
+                    <!-- Dashboard -->
                     <li class="sidebar-menu">
                         <a class="sidebar-link sidebar-title link-nav" href="{{ url('admin/dashboard') }}">
                             <svg class="stroke-icon">
@@ -72,9 +71,22 @@
                             <span>User Management</span>
                         </a>
                         <ul class="sidebar-submenu">
-                            <li><a href="{{ url('admin/user') }}">Users List</a></li>{{-- 
-                            <li><a href="{{ url('admin/user/create') }}">Add User</a></li> --}}
+                            <li><a href="{{ url('admin/user') }}">Users List</a></li>
                             <li><a href="{{ url('admin/role') }}">Roles</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Stock Intake -->
+                    <li class="sidebar-list">
+                        <a class="sidebar-link sidebar-title" href="javascript:void(0)">
+                            <svg class="stroke-icon">
+                                <use href="{{ asset('assets/svg/icon-sprite.svg#stroke-truck') }}"></use>
+                            </svg>
+                            <span>Stock Intake</span>
+                        </a>
+                        <ul class="sidebar-submenu">
+                            <li><a href="{{ url('admin/stock-intake') }}">Stock Intake Overview</a></li>
+                            <li><a href="{{ url('admin/stock-intake/create') }}">Record New Intake</a></li>
                         </ul>
                     </li>
 
@@ -94,37 +106,22 @@
                         </ul>
                     </li>
 
-                    <!-- Procurement Management -->
+                    <!-- Category Management -->
                     <li class="sidebar-list">
                         <a class="sidebar-link sidebar-title" href="javascript:void(0)">
                             <svg class="stroke-icon">
-                                <use href="{{ asset('assets/svg/icon-sprite.svg#stroke-shopping-cart') }}"></use>
+                                <use href="{{ asset('assets/svg/icon-sprite.svg#stroke-tag') }}"></use>
                             </svg>
-                            <span>Procurement</span>
+                            <span>Categories & Attributes</span>
                         </a>
                         <ul class="sidebar-submenu">
-                            <li><a href="{{ url('admin/procurements') }}">Procurement Dashboard</a></li>
-                            <li><a href="{{ url('admin/procurements/detail') }}">Procurement Detail</a></li>
-                            <li><a href="{{ url('admin/procurements/create') }}">Add/Edit Procurement Order</a></li>
+                            <li><a href="{{ url('admin/categories') }}">Categories</a></li>
+                            <li><a href="{{ url('admin/subcategories') }}">Subcategories</a></li>
+                            <li><a href="{{ url('admin/attributes') }}">Product Attributes</a></li>
                         </ul>
                     </li>
 
-                    <!-- Order Management -->
-                    <li class="sidebar-list">
-                        <a class="sidebar-link sidebar-title" href="javascript:void(0)">
-                            <svg class="stroke-icon">
-                                <use href="{{ asset('assets/svg/icon-sprite.svg#stroke-truck') }}"></use>
-                            </svg>
-                            <span>Orders</span>
-                        </a>
-                        <ul class="sidebar-submenu">
-                            <li><a href="{{ url('admin/orders') }}">Orders List</a></li>
-                            <li><a href="{{ url('admin/orders/detail') }}">Order Detail</a></li>
-                            <li><a href="{{ url('admin/orders/process') }}">Order Processing</a></li>
-                        </ul>
-                    </li>
-
-                    <!-- Rack & Space Optimization -->
+                    <!-- Rack & Space Management -->
                     <li class="sidebar-list">
                         <a class="sidebar-link sidebar-title" href="javascript:void(0)">
                             <svg class="stroke-icon">
@@ -135,7 +132,6 @@
                         <ul class="sidebar-submenu">
                             <li><a href="{{ url('admin/racks') }}">Rack Overview</a></li>
                             <li><a href="{{ url('admin/racks/detail') }}">Rack Detail</a></li>
-                            <li><a href="{{ url('admin/racks/allocate') }}">Space Allocation</a></li>
                         </ul>
                     </li>
 
@@ -150,13 +146,10 @@
                         <ul class="sidebar-submenu">
                             <li><a href="{{ url('admin/reports') }}">Reports Dashboard</a></li>
                             <li><a href="{{ url('admin/reports/stock') }}">Stock Reports</a></li>
-                            <li><a href="{{ url('admin/reports/sales') }}">Sales/Order Reports</a></li>
-                            <li><a href="{{ url('admin/reports/procurement') }}">Procurement Reports</a></li>
-                            <li><a href="{{ url('admin/reports/visualizations') }}">Data Visualizations</a></li>
                         </ul>
                     </li>
 
-                    <!-- Integrations & Settings -->
+                    <!-- Settings -->
                     <li class="sidebar-list">
                         <a class="sidebar-link sidebar-title" href="javascript:void(0)">
                             <svg class="stroke-icon">
@@ -165,7 +158,6 @@
                             <span>Settings</span>
                         </a>
                         <ul class="sidebar-submenu">
-                            <li><a href="{{ url('admin/integrations') }}">Integration Configuration</a></li>
                             <li><a href="{{ url('admin/settings') }}">System Settings</a></li>
                         </ul>
                     </li>
