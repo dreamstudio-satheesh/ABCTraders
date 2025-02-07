@@ -80,7 +80,7 @@
                     <li class="sidebar-list">
                         <a class="sidebar-link sidebar-title" href="javascript:void(0)">
                             <svg class="stroke-icon">
-                                <use href="{{ asset('assets/svg/icon-sprite.svg#stroke-truck') }}"></use>
+                                <use href="{{ asset('assets/svg/icon-sprite.svg#stroke-project') }}"></use>
                             </svg>
                             <span>Stock Intake</span>
                         </a>
@@ -94,7 +94,7 @@
                     <li class="sidebar-list">
                         <a class="sidebar-link sidebar-title" href="javascript:void(0)">
                             <svg class="stroke-icon">
-                                <use href="{{ asset('assets/svg/icon-sprite.svg#stroke-box') }}"></use>
+                                <use href="{{ asset('assets/svg/icon-sprite.svg#stroke-blog') }}"></use>
                             </svg>
                             <span>Inventory</span>
                         </a>
@@ -110,9 +110,9 @@
                     <li class="sidebar-list">
                         <a class="sidebar-link sidebar-title" href="javascript:void(0)">
                             <svg class="stroke-icon">
-                                <use href="{{ asset('assets/svg/icon-sprite.svg#stroke-tag') }}"></use>
+                                <use href="{{ asset('assets/svg/icon-sprite.svg#stroke-widget') }}"></use>
                             </svg>
-                            <span>Categories & Attributes</span>
+                            <span>Categories</span>
                         </a>
                         <ul class="sidebar-submenu">
                             <li><a href="{{ url('admin/categories') }}">Categories</a></li>
@@ -139,7 +139,7 @@
                     <li class="sidebar-list">
                         <a class="sidebar-link sidebar-title" href="javascript:void(0)">
                             <svg class="stroke-icon">
-                                <use href="{{ asset('assets/svg/icon-sprite.svg#stroke-bar-chart') }}"></use>
+                                <use href="{{ asset('assets/svg/icon-sprite.svg#stroke-charts') }}"></use>
                             </svg>
                             <span>Reports</span>
                         </a>
@@ -153,7 +153,7 @@
                     <li class="sidebar-list">
                         <a class="sidebar-link sidebar-title" href="javascript:void(0)">
                             <svg class="stroke-icon">
-                                <use href="{{ asset('assets/svg/icon-sprite.svg#stroke-settings') }}"></use>
+                                <use href="{{ asset('assets/svg/icon-sprite.svg#stroke-task') }}"></use>
                             </svg>
                             <span>Settings</span>
                         </a>
