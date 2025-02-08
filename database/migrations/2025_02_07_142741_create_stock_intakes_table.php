@@ -12,8 +12,16 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('stock_intakes', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            // Reference to products table
+            $table->foreignId('product_id')->constrained()->cascadeOnDelete();
+            $table->integer('quantity')->unsigned();
+            // Reference to racks table
+            $table->foreignId('rack_id')->constrained()->cascadeOnDelete();
+            // Reference to shelves table
+            $table->foreignId('shelf_id')->constrained()->cascadeOnDelete();
+            $table->string('supplier')->nullable();
+            // Intake date stored as a timestamp (nullable in case you want to set it programmatically)
+            $table->timestamp('intake_date')->nullable();
         });
     }
 
