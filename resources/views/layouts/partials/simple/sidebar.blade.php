@@ -129,8 +129,8 @@
                             <span>Racks & Space</span>
                         </a>
                         <ul class="sidebar-submenu">
-                            <li><a href="{{ url('admin/racks') }}">Rack Overview</a></li>
-                            <li><a href="{{ url('admin/racks/detail') }}">Rack Detail</a></li>
+                            <li><a href="{{ url('admin/rack-shelf-manager') }}">Manage Rack & Shelf</a></li>
+                            <li><a href="{{ url('admin/rack-overview') }}">Rack Overview</a></li>
                         </ul>
                     </li>
 

@@ -8,9 +8,9 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 class Attribute extends Model {
     use HasFactory;
 
-    protected $fillable = ['name', 'type'];
+    protected $fillable = ['name', 'slug'];
 
-    public function values() {
+    public function attributeValues() {
         return $this->hasMany(AttributeValue::class);
     }
 }

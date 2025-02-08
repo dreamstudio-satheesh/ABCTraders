@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Livewire\AttributeManager;
+use App\Http\Livewire\RackShelfManager;
 
 Auth::routes();
 
@@ -33,5 +35,11 @@ Route::group(['middleware' => ['auth'], 'as' => 'admin.', 'prefix' => 'admin'], 
      //Category
      Route::resource('category', App\Http\Controllers\Admin\CategoryController::class);
      Route::post('category/update-orders', [App\Http\Controllers\Admin\CategoryController::class, 'updateOrders'])->name('category.update.orders');
+
+     Route::get('/attributes', AttributeManager::class)->name('attributes.index');
+
+     Route::get('/rack-shelf-manager', RackShelfManager::class)->name('rack.shelf.manager');
+
+     Route::view('/rack-overview', 'pages.rack-overview');
 
 });
