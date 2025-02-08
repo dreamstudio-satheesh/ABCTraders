@@ -115,8 +115,7 @@
                             <span>Categories</span>
                         </a>
                         <ul class="sidebar-submenu">
-                            <li><a href="{{ url('admin/categories') }}">Categories</a></li>
-                            <li><a href="{{ url('admin/subcategories') }}">Subcategories</a></li>
+                            <li><a href="{{ url('admin/category') }}">Categories</a></li>
                             <li><a href="{{ url('admin/attributes') }}">Product Attributes</a></li>
                         </ul>
                     </li>
