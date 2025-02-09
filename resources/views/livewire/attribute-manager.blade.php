@@ -1,7 +1,7 @@
 <div class="container-fluid">
     <div class="row">
       <!-- Create/Edit Attribute Card -->
-      <div class="col-sm-12 mb-3">
+      <div class="col-md-4 mb-3">
         <div class="card title-line">
           <div class="card-header">
             <h2 class="card-title">{{ $attributeId ? 'Edit Attribute' : 'Create Attribute' }}</h2>
@@ -46,7 +46,7 @@
       </div>
   
       <!-- Attributes List Card -->
-      <div class="col-sm-12">
+      <div class="col-md-8">
         <div class="card title-line">
           <div class="card-header">
             <h2 class="card-title">Attributes List</h2>
@@ -59,9 +59,8 @@
                   <tr>
                     <th scope="col" style="width: 5%;">ID</th>
                     <th scope="col" style="width: 20%;">Name</th>
-                    <th scope="col" style="width: 20%;">Slug</th>
-                    <th scope="col" style="width: 35%;">Values</th>
-                    <th scope="col" style="width: 20%;">Actions</th>
+                    <th scope="col" style="width: 45%;">Values</th>
+                    <th scope="col" style="width: 30%;">Actions</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -69,7 +68,6 @@
                     <tr>
                       <td>{{ $attribute->id }}</td>
                       <td>{{ $attribute->name }}</td>
-                      <td>{{ $attribute->slug }}</td>
                       <td>
                         @foreach($attribute->attributeValues as $value)
                           {{ $value->value }}@if(!$loop->last), @endif

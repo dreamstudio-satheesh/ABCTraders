@@ -12,16 +12,28 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('stock_intakes', function (Blueprint $table) {
-            // Reference to products table
+            $table->id();
+            
+            // Foreign key to the products table.
             $table->foreignId('product_id')->constrained()->cascadeOnDelete();
-            $table->integer('quantity')->unsigned();
-            // Reference to racks table
+            
+            // Quantity of the product received (unsigned integer).
+            $table->unsignedInteger('quantity');
+            
+            // Foreign key to the racks table.
             $table->foreignId('rack_id')->constrained()->cascadeOnDelete();
-            // Reference to shelves table
+            
+            // Foreign key to the shelves table.
             $table->foreignId('shelf_id')->constrained()->cascadeOnDelete();
+            
+            // Optional supplier information for this intake.
             $table->string('supplier')->nullable();
-            // Intake date stored as a timestamp (nullable in case you want to set it programmatically)
+            
+            // The date and time when the stock intake occurred.
             $table->timestamp('intake_date')->nullable();
+            
+            // Timestamps for created_at and updated_at.
+            $table->timestamps();
         });
     }
 

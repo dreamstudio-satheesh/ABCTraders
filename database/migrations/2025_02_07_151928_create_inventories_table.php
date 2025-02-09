@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration {
     public function up(): void {
-        Schema::create('inventory', function (Blueprint $table) {
+        Schema::create('inventories', function (Blueprint $table) {
             $table->id();
             $table->foreignId('product_id')->constrained()->cascadeOnDelete();
             $table->foreignId('rack_id')->constrained()->cascadeOnDelete();
@@ -17,6 +17,6 @@ return new class extends Migration {
     }
 
     public function down(): void {
-        Schema::dropIfExists('inventory');
+        Schema::dropIfExists('inventories');
     }
 };

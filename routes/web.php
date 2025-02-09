@@ -1,9 +1,12 @@
 <?php
 
 use Illuminate\Support\Facades\Auth;
+use App\Http\Livewire\ProductManager;
 use Illuminate\Support\Facades\Route;
 use App\Http\Livewire\AttributeManager;
+use App\Http\Livewire\InventoryManager;
 use App\Http\Livewire\RackShelfManager;
+use App\Http\Livewire\StockIntakeManager;
 
 Auth::routes();
 
@@ -39,6 +42,12 @@ Route::group(['middleware' => ['auth'], 'as' => 'admin.', 'prefix' => 'admin'], 
      Route::get('/attributes', AttributeManager::class)->name('attributes.index');
 
      Route::get('/rack-shelf-manager', RackShelfManager::class)->name('rack.shelf.manager');
+
+     Route::get('/products', ProductManager::class)->name('products.index');
+
+     Route::get('/inventory', InventoryManager::class)->name('inventory.index');
+
+     Route::get('/stock-intakes', StockIntakeManager::class)->name('stock.intakes.index');
 
      Route::view('/rack-overview', 'pages.rack-overview');
 
