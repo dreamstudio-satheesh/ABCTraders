@@ -8,6 +8,4 @@ git commit -m "app"
 git push
 
 
-
-
 git remote add server servcpcom@49.13.62.204:/home/servcpcom/ABCTraders.git
