@@ -163,30 +163,6 @@
 @endsection
 
 @section('scripts')
-    <!-- Bootstrap 5 JS Bundle (includes Popper) from CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Additional Theme JS Assets -->
-    <script src="{{ asset('assets/js/jquery.min.js') }}"></script>
-    <script src="{{ asset('assets/js/scrollbar/simplebar.js') }}"></script>
-    <script src="{{ asset('assets/js/scrollbar/custom.js') }}"></script>
-    <script src="{{ asset('assets/js/config.js') }}"></script>
-    <script src="{{ asset('assets/js/sidebar-menu.js') }}"></script>
-    <script src="{{ asset('assets/js/sidebar-pin.js') }}"></script>
-    <script src="{{ asset('assets/js/slick/slick.min.js') }}"></script>
-    <script src="{{ asset('assets/js/slick/slick.js') }}"></script>
-    <script>
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a.nav-link').forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if(target) {
-                    window.scrollTo({
-                        top: target.offsetTop - 70, // adjust offset if needed
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-    </script>
+ 
+   
 @endsection

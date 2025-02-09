@@ -86,7 +86,8 @@
                         </a>
                         <ul class="sidebar-submenu">
                             <li><a href="{{ url('admin/stock-intakes') }}">Stock Intake Overview</a></li>
-                            <li><a href="{{ url('admin/stock-intake/create') }}">Record New Intake</a></li>
+                            <li><a href="{{ url('admin/stock-intakes/create') }}">Record New Intake</a></li>
+                            <li><a href="{{ url('admin/products') }}">Products</a></li>
                         </ul>
                     </li>
 
