@@ -46,6 +46,7 @@ Route::group(['middleware' => ['auth'], 'as' => 'admin.', 'prefix' => 'admin'], 
      Route::get('/products', ProductManager::class)->name('products.index');
 
      Route::get('/inventory', InventoryManager::class)->name('inventory.index');
+     Route::get('/inventory/{any}', InventoryManager::class)->name('inventory.pages');
 
      Route::get('/stock-intakes', StockIntakeManager::class)->name('stock.intakes.index');
      Route::get('/stock-intakes/create', StockIntakeManager::class);
