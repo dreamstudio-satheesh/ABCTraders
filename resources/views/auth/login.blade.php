@@ -33,7 +33,7 @@
                                 <div class="form-input position-relative">
                                     <input class="form-control @error('password') is-invalid @enderror" id="password"
                                         type="password" required="" placeholder="*********" name="password"
-                                        value="123456789" autocomplete="current-password">
+                                        value="password123" autocomplete="current-password">
                                     @error('password')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
