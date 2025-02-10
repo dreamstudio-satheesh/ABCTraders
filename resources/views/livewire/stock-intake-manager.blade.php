@@ -15,7 +15,7 @@
                     @endif
                     <form wire:submit.prevent="{{ $stockIntakeId ? 'updateStockIntake' : 'createStockIntake' }}">
                         <div class="row">
-                            <div class="col-4 mb-3">
+                            <div class="col-md-4 mb-3">
                                 <label for="product_id" class="form-label">Product</label>
                                 <select id="product_id" class="form-select" wire:model="product_id">
                                     <option value="">-- Select Product --</option>
@@ -29,14 +29,14 @@
                                     <small class="text-danger">{{ $message }}</small>
                                 @enderror
                             </div>
-                            <div class="col-4 mb-3">
+                            <div class="col-md-4 mb-3">
                                 <label for="quantity" class="form-label">Quantity</label>
                                 <input type="number" id="quantity" class="form-control" wire:model="quantity">
                                 @error('quantity')
                                     <small class="text-danger">{{ $message }}</small>
                                 @enderror
                             </div>
-                            <div class="col-4 mb-3">
+                            <div class="col-md-4 mb-3">
                                 <label for="rack_id" class="form-label">Rack</label>
                                 <select id="rack_id" class="form-select" wire:model.live="rack_id">
                                     <option value="">-- Select Rack --</option>
@@ -48,7 +48,7 @@
                                     <small class="text-danger">{{ $message }}</small>
                                 @enderror
                             </div>
-                            <div class="col-4 mb-3">
+                            <div class="col-md-4 mb-3">
                                 <label for="shelf_id" class="form-label">Shelf</label>
                                 <select id="shelf_id" class="form-select" wire:model="shelf_id">
                                     <option value="">-- Select Shelf --</option>
@@ -62,14 +62,14 @@
                                     <small class="text-danger">{{ $message }}</small>
                                 @enderror
                             </div>
-                            <div class="col-4 mb-3">
+                            <div class="col-md-4 mb-3">
                                 <label for="supplier" class="form-label">Supplier</label>
                                 <input type="text" id="supplier" class="form-control" wire:model="supplier">
                                 @error('supplier')
                                     <small class="text-danger">{{ $message }}</small>
                                 @enderror
                             </div>
-                            <div class="col-4 mt-4">
+                            <div class="col-md-4 mt-4">
                                 <button type="submit" class="btn btn-primary me-2">
                                     {{ $stockIntakeId ? 'Update Stock Intake' : 'Record Stock Intake' }}
                                 </button>
