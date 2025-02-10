@@ -15,14 +15,14 @@
                     @endif
                     <form wire:submit.prevent="{{ $productId ? 'updateProduct' : 'createProduct' }}">
                         <div class="row">
-                            <div class="col-4 mb-3">
+                            <div class="col-md-4 mb-3">
                                 <label for="name" class="form-label">Product Name</label>
                                 <input type="text" id="name" class="form-control" wire:model="name" autofocus>
                                 @error('name')
                                     <small class="text-danger">{{ $message }}</small>
                                 @enderror
                             </div>
-                            <div class="col-4 mb-3">
+                            <div class="col-md-4 mb-3">
                                 <label for="barcode" class="form-label">Barcode</label>
                                 <input type="text" id="barcode" class="form-control" wire:model="barcode">
                                 @error('barcode')
@@ -30,7 +30,7 @@
                                 @enderror
                             </div>
                             <!-- Primary Category Dropdown -->
-                            <div class="col-4 mb-3">
+                            <div class="col-md-4 mb-3">
                                 <label for="category_id" class="form-label">Category</label>
                                 <select id="category_id" class="form-select" wire:model.live="category_id">
                                     <option value="">-- Select Category --</option>
@@ -43,7 +43,7 @@
                                 @enderror
                             </div>
                             <!-- Subcategory Dropdown -->
-                            <div class="col-4 mb-3">
+                            <div class="col-md-4 mb-3">
                                 <label for="subcategory_id" class="form-label">Subcategory</label>
                                 <select id="subcategory_id" class="form-select" wire:model="subcategory_id">
                                     <option value="">-- Select Subcategory --</option>
@@ -58,7 +58,7 @@
                                 @enderror
                             </div>
                             <!-- Product Attributes -->
-                            <div class="col-4 mb-3">
+                            <div class="col-md-4 mb-3">
                                 <label for="productAttributes" class="form-label">Attributes (JSON or
                                     comma-separated)</label>
                                 <input type="text" id="productAttributes" class="form-control"
@@ -67,7 +67,7 @@
                                     <small class="text-danger">{{ $message }}</small>
                                 @enderror
                             </div>
-                            <div class="col-4 mb-3">
+                            <div class="col-md-4 mb-3">
                                 <label for="supplier" class="form-label">Supplier</label>
                                 <input type="text" id="supplier" class="form-control" wire:model="supplier">
                                 @error('supplier')
